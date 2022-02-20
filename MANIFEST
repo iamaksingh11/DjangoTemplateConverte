@@ -3,4 +3,3 @@ setup.cfg
 setup.py
 DjangoTemplateConverter\__init__.py
 DjangoTemplateConverter\start.py
-bin\DjangoTemplateConverter-joke
