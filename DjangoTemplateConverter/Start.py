@@ -29,6 +29,10 @@ def main():
                 file_path = temPath / f
                 with open(file_path, 'r+') as file:
                     data = file.read()
+                    if(loadStatic in data):
+                        staticExist=True
+                    else:
+                        staticExist=False
                     soup = BeautifulSoup(data, "html.parser")
                     for link in soup.find_all('link', href=True):
                         splitt = link['href'].split('.')
@@ -47,11 +51,7 @@ def main():
                     # print(soup)
                     file.truncate(0)
                     file.seek(0)
-                    file.write(loadStatic+'\n')
+                    if(staticExist==False):
+                        file.write(loadStatic+'\n')
                     file.write(str(soup))
                     file.close()
-
-
-
-
-main()
