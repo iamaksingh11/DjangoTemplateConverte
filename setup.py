@@ -1,5 +1,4 @@
 from distutils.core import setup
-print("vgjvgjhvjhvjhvvvvvvvvvvvvvvvvvvvvvvv")
 setup(
   name = 'DjangoTemplateConverter',         # How you named your package folder (MyLib)
   packages = ['DjangoTemplateConverter'],   # Chose the same as "name"
