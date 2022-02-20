@@ -1,0 +1,2 @@
+from django_template_converter.setup import printLine
+from django_template_converter.setu2 import printLine2
