@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-
+import DjangoTemplateConverter
+DjangoTemplateConverter.start()
 print("hello brother")
 print("hello brotherjb")
 print("hello brothevgjr")
