@@ -2,7 +2,11 @@ from distutils.core import setup
 setup(
   name = 'DjangoTemplateConverter',         # How you named your package folder (MyLib)
   packages = ['DjangoTemplateConverter'],   # Chose the same as "name"
+<<<<<<< HEAD
   version = '2.4',      # Start with a small number and increase it with every change you make
+=======
+  version = '1.5',      # Start with a small number and increase it with every change you make
+>>>>>>> 2aa0f00495d06845ff8528a135da2ebf9b742f21
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'TYPE YOUR DESCRIPTION HERE',   # Give a short description about your library
   author = 'YOUR NAME',                   # Type in your name

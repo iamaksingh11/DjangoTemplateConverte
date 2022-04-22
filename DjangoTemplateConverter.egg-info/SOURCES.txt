@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+DjangoTemplateConverter/__init__.py
+DjangoTemplateConverter/start.py
+DjangoTemplateConverter.egg-info/PKG-INFO
+DjangoTemplateConverter.egg-info/SOURCES.txt
+DjangoTemplateConverter.egg-info/dependency_links.txt
+DjangoTemplateConverter.egg-info/entry_points.txt
+DjangoTemplateConverter.egg-info/top_level.txt
