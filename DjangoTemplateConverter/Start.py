@@ -14,8 +14,8 @@ def main():
     parser.add_argument('--su', help='arg1 help')
     parser.add_argument('--rl', help='arg2 help')
     args = parser.parse_args()
-    print("remove_length {}, static_url {}".format(args.su, args.rl))
-    removeLength = args.rl if args.rl else 9
+    print("remove_length {}, static_url {}".format(args.rl, args.su))
+    removeLength = args.rl if int(args.rl) else 9
     staticUrl = args.su if args.su else 'static'
     loadStatic = "{% load static %}"
     cwd = os.getcwd()

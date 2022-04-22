@@ -1,0 +1,2 @@
+[console_scripts]
+DjangoTemplateConverter = DjangoTemplateConverter.start:main
