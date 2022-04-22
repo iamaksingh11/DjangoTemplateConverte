@@ -4,19 +4,23 @@ import importlib.util
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-requiredEx = ['css', 'png', 'jpg', 'json']
 
 # DjangoTemplateConverter
 
+requiredAll = ['css', 'png', 'jpg', 'json','ico']
+requiredOnly = ['css']
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--su', help='arg1 help')
     parser.add_argument('--rl', help='arg2 help')
+    parser.add_argument('--md', help='arg3 help')
     args = parser.parse_args()
-    print("remove_length {}, static_url {}".format(args.su, args.rl))
-    removeLength = args.rl if args.rl else 9
+    print("remove_length {}, static_url {}, mode {}".format(args.rl, args.su, args.md))
+    removeLength = int(args.rl) if args.rl else 7
     staticUrl = args.su if args.su else 'static'
+    mode = "all" if args.md else 'only'
+    requiredEx = requiredAll if (mode =='all') else requiredOnly
     loadStatic = "{% load static %}"
     cwd = os.getcwd()
     lol = Path(cwd).resolve()
